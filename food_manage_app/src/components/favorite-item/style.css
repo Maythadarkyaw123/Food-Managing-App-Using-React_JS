@@ -1,0 +1,61 @@
+.items-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px; 
+    padding: 20px; 
+}
+
+.favorites-title{
+    color: rgb(40, 92, 137);
+    text-align: center;
+    font-size: 30px;
+}
+
+.favorite-item {
+    background-color: rgb(147, 176, 202);
+    flex: 1 1 calc(25% - 20px); 
+    box-sizing: border-box;
+    margin-bottom: 20px; 
+    padding: 10px;
+    border: 2px solid rgb(66, 116, 159); 
+    border-radius: 4px; 
+    text-align: center; 
+}
+
+
+
+.favorite-item:hover {
+    background-color: rgb(146, 187, 225);
+    border: 1px solid transparent;
+    padding: 10px;
+    border: 1px solid rgb(198, 224, 248);
+    border-radius: 4px;
+}
+
+.favorite-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.loading {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.favorite-item p {
+    color: #b67951;
+    font-weight: 700;
+    font-size: 18px;
+    margin: 12px 0;
+}
+
+.recipe-item button,
+.favorite-item button {
+    background-color: rgb(198, 224, 248);
+    border: 1px solid transparent;
+    padding: 10px;
+    border: 1px solid rgb(198, 224, 248);
+    border-radius: 4px;
+    cursor: pointer;
+}

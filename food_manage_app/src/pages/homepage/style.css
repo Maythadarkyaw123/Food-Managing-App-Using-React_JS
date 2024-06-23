@@ -1,0 +1,29 @@
+
+
+.search-favorite{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.search-favorite input{
+    height: 3em;
+    width: 20em;
+    text-align: center;
+    border-color: rgb(40, 92, 137);
+    border-style: solid;
+    border-radius: 2em;
+
+    
+}
+
+/* .search-favorite button{
+    height: 3em;
+    width: 6em;
+    border: none;
+    border-radius:2em;
+    color: aliceblue;
+    margin: 1em;
+    cursor: pointer;
+    background-color: rgb(40, 92, 137);
+} */

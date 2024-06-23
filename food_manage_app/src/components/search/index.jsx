@@ -1,7 +1,9 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import './style.css';
 
-const Search = () => {
+const Search = (props) => {
+    const {getdatafromSearchComponent, ApiCalledSuccess, setApiCalledSuccess} = props; 
+
     const [inputValue, setinputValue] = useState('');
     const handleinputvalue = (event) =>{
         const {value} = event.target;
@@ -9,9 +11,23 @@ const Search = () => {
     }
     console.log(inputValue);
 
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        getdatafromSearchComponent(inputValue);
+        // console.log(inputValue);
+    }
+
+    useEffect(() =>{
+      if(ApiCalledSuccess){
+        setinputValue('')
+        setApiCalledSuccess(false);
+      }
+
+    },[ApiCalledSuccess]);
+
   return (
     <div className="Search">
-      <form action="">
+      <form onSubmit={handleSubmit}>
         <input
           type="text"
           name="search"
