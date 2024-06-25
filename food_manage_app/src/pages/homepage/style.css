@@ -1,29 +1,41 @@
-
-
-.search-favorite{
+.search-favorite {
     display: flex;
     justify-content: center;
-    
-}
-
-.search-favorite input{
+  }
+  
+  .search-favorite input {
     height: 3em;
     width: 20em;
     text-align: center;
     border-color: rgb(40, 92, 137);
     border-style: solid;
     border-radius: 2em;
-
-    
-}
-
-/* .search-favorite button{
-    height: 3em;
-    width: 6em;
-    border: none;
-    border-radius:2em;
-    color: aliceblue;
-    margin: 1em;
-    cursor: pointer;
-    background-color: rgb(40, 92, 137);
-} */
+  }
+  
+  .items-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .loading,
+  .no-items {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .favorites-wrapper {
+    margin-bottom: 20px;
+  }
+  
+  .favorites-title {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .favorites.items-container {
+    margin-top: 20px;
+  }
+  
